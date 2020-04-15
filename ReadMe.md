@@ -2,7 +2,7 @@
 
 **URLPlaylister_JavaWebApp**
 
-This is a simple application that can.
+This is a work in progress. The current goal is to create a simple application with abilities to:
 
 1) Read Information from database 
 2) Insert Rows Into Database 
@@ -11,7 +11,6 @@ This is a simple application that can.
   
 Technologies Utilized:
 
- - Maven 
  - JSP 
  - Servlets 
  - Java 
@@ -29,5 +28,5 @@ itemDuration - int
 
 =====
 **Resources:**
-This is based heavily on my leanings from this Youtube Playlist:
+This is based heavily on my learnings from this Youtube Playlist:
 https://www.youtube.com/playlist?list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
