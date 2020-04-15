@@ -32,4 +32,47 @@ public class ItemDao
 		
 		return i;		
 	}
+	
+	
+	public Item createItem(int itemId, String itemTitle, String itemUrl, int itemDuration)
+	{
+		Item i = new Item();
+		
+		String url = "jdbc:mysql://localhost:3306/urlplaylister";
+		String uname = "root";
+		String pass = "";
+		
+		i.setItemId(itemId);
+		i.setItemTitle(itemTitle);
+		i.setItemUrl(itemUrl);
+		i.setItemDuration(itemDuration);
+		
+		
+		String query ="insert into item values(?,?,?,?)";
+		
+		
+		try 
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection(url, uname, pass);
+			PreparedStatement st = con.prepareStatement(query);
+			
+			st.setInt(1, itemId);
+			st.setString(2, itemTitle);
+			st.setString(3, itemUrl);
+			st.setInt(4, itemDuration);
+			
+			int preparedStatementResults = st.executeUpdate();
+			
+			System.out.println(st.toString());
+			System.out.println(preparedStatementResults + " row(s) affected");
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		
+		return i;
+	}
 }

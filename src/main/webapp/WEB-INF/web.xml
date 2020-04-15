@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>com.granumignis.web.GetItemController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>CreateItemController</servlet-name>
+  	<display-name>CreateItemController</display-name>
+  	<description></description>
+  	<servlet-class>com.granumignis.web.CreateItemController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GetItemController</servlet-name>
   	<url-pattern>/getItem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CreateItemController</servlet-name>
+  	<url-pattern>/createItem</url-pattern>
   </servlet-mapping>
 </web-app>
