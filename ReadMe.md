@@ -20,10 +20,10 @@ Technologies Utilized:
 
 **Database Table Structure (urlplaylister.item)**
 
-itemId - int - Primary Key - Non-Nullable
-itemTitle - varchar(255)
-itemUrl - text
-itemDuration - int
+ - itemId - int - Primary Key - Non-Nullable
+ - itemTitle - varchar(255)
+ - itemUrl - text
+ - itemDuration - int
 
 
 =====
