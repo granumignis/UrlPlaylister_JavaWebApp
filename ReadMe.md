@@ -31,3 +31,6 @@ Technologies Utilized:
 **Resources:**
 This is based heavily on my learnings from this Youtube Playlist:
 https://www.youtube.com/playlist?list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46
+
+A Trello Board related to this project can be found below:
+https://trello.com/b/IhICsxUq/java-web-application-with-database-interactions
