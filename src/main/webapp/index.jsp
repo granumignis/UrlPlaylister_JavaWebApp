@@ -24,5 +24,18 @@
 	<br>
 	<input type="submit">
 	</form>
+	
+	
+<b>updateItem:</b>
+	<form action="updateItem">
+	<br>
+	
+	Enter the itemId of the item you would like to update.
+	itemId: <input type="text" name="itemId"> <br><br>
+	
+	<br>
+	<input type="submit">
+	</form>
+	
 </body>
 </html>
