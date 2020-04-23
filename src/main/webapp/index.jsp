@@ -27,10 +27,10 @@
 	
 	
 <b>updateItem:</b>
-	<form action="updateItem">
+	<form action="getItemForUpdate">
 	<br>
 	
-	Enter the itemId of the item you would like to update.
+	Enter the itemId of the item you would like to update. <br>
 	itemId: <input type="text" name="itemId"> <br><br>
 	
 	<br>

@@ -16,16 +16,18 @@ public class UpdateItemController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		int itemId = Integer.parseInt(request.getParameter("itemId"));
-
-		ItemDao dao = new ItemDao();
-		Item i1 = dao.updateItem(itemId);
-	
-		request.setAttribute("item", i1);		
-		
-		RequestDispatcher rd = request.getRequestDispatcher("updateItem.jsp");
-		rd.forward(request, response);
-		
+		/* This Block Commented Out Because I need to flesh out GetItemForUpdateController.java first
+		 * 04/22/20 - LMJOH
+		 * 
+		 * int itemId = Integer.parseInt(request.getParameter("itemId"));
+		 * 
+		 * ItemDao dao = new ItemDao(); Item i1 = dao.updateItem(itemId);
+		 * 
+		 * request.setAttribute("item", i1);
+		 * 
+		 * RequestDispatcher rd = request.getRequestDispatcher("updateItem.jsp");
+		 * rd.forward(request, response);
+		 */		
 	}
 
 }

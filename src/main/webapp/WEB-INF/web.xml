@@ -4,24 +4,47 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+<!-- Servlet Section Below -->  
+  
   <servlet>
   	<servlet-name>GetItemController</servlet-name>
   	<display-name>GetItemController</display-name>
   	<description></description>
   	<servlet-class>com.granumignis.web.GetItemController</servlet-class>
   </servlet>
+  
+   <servlet>
+  	<servlet-name>GetItemForUpdateController</servlet-name>
+  	<display-name>GetItemForUpdateController</display-name>
+  	<description></description>
+  	<servlet-class>com.granumignis.web.GetItemForUpdateController</servlet-class>
+  </servlet>
+ 
   <servlet>
   	<servlet-name>CreateItemController</servlet-name>
   	<display-name>CreateItemController</display-name>
   	<description></description>
   	<servlet-class>com.granumignis.web.CreateItemController</servlet-class>
   </servlet>
-  <servlet-mapping>
+  
+ 
+<!-- Servlet Mapping Section Below -->
+ 
+   <servlet-mapping>
   	<servlet-name>GetItemController</servlet-name>
   	<url-pattern>/getItem</url-pattern>
   </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>GetItemForUpdateController</servlet-name>
+  	<url-pattern>/getItemForUpdate</url-pattern>
+  </servlet-mapping>  
+  
   <servlet-mapping>
   	<servlet-name>CreateItemController</servlet-name>
   	<url-pattern>/createItem</url-pattern>
   </servlet-mapping>
+  
+  
 </web-app>
