@@ -19,11 +19,10 @@
  	<form action="updateItem">
 	<br>
 	
-	* The form Below Should Eventually Populate with Items From Database * <br>
-	* This will help to facilitate an update of the values based on * <br> 
-	* Modifications to the form * <br>
+	* Modify the Values Below As desired. Note that itemID is read only * <br>
+	* Use the Submit Button to Update the Database * <br>
 	
-	itemId: <input type="text" name="itemId" value="<%out.print(i1.getItemId());%>"> <br><br>
+	itemId: <input type="text" name="itemId" value="<%out.print(i1.getItemId());%>" readonly> <br><br>
 	itemTitle: <input type="text" name="itemTitle" value="<%out.print(i1.getItemTitle());%>"> <br><br>
 	itemUrl: <input type="text" name="itemUrl" value="<%out.print(i1.getItemUrl());%>"> <br><br>
 	itemDuration: <input type="text" name="itemDuration"value="<%out.print(i1.getItemDuration());%>"> <br><br>
