@@ -59,6 +59,11 @@
   	<servlet-name>CreateItemController</servlet-name>
   	<url-pattern>/createItem</url-pattern>
   </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateItemController</servlet-name>
+    <url-pattern>/updateItem</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>DeleteItemController</servlet-name>
