@@ -37,5 +37,17 @@
 	<input type="submit">
 	</form>
 	
+	
+<b>deleteItem:</b>
+	<form action="deleteItem">
+	<br>
+	
+	Enter the itemId of the item you would like to delete from the database. <br>
+	itemId: <input type="text" name="itemId"> <br><br>
+	
+	<br>	
+	<input type="submit">
+	</form>
+	
 </body>
 </html>

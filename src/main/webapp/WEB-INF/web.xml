@@ -34,6 +34,13 @@
     <description></description>
     <servlet-class>com.granumignis.web.UpdateItemController</servlet-class>
   </servlet>
+
+  <servlet>
+    <servlet-name>DeleteItemController</servlet-name>
+    <display-name>DeleteItemController</display-name>
+    <description></description>
+    <servlet-class>com.granumignis.web.DeleteItemController</servlet-class>
+  </servlet>
   
  
 <!-- Servlet Mapping Section Below -->
@@ -54,8 +61,8 @@
   </servlet-mapping>
 
   <servlet-mapping>
-    <servlet-name>UpdateItemController</servlet-name>
-    <url-pattern>/updateItem</url-pattern>
+    <servlet-name>DeleteItemController</servlet-name>
+    <url-pattern>/deleteItem</url-pattern>
   </servlet-mapping>
   
 </web-app>

@@ -119,4 +119,39 @@ public class ItemDao
 		
 		return i;
 	}
+
+
+
+	public String deleteItem(int itemId)
+	{
+	
+		String url = "jdbc:mysql://localhost:3306/urlplaylister";
+		String uname = "root";
+		String pass = "";
+		String query ="delete from item where itemID=?";
+		String queryResult = "";
+
+		try 
+		{
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection(url, uname, pass);
+			PreparedStatement st = con.prepareStatement(query);
+			
+			st.setInt(1, itemId);
+				
+			int preparedStatementResults = st.executeUpdate();
+			
+			System.out.println(st.toString());
+			queryResult = preparedStatementResults + " row(s) affected by delete query.";
+			System.out.println(queryResult);
+			return queryResult;
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+			return e.toString();
+		}
+		
+	}
+
 }
