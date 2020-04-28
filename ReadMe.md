@@ -7,7 +7,7 @@ This is a work in progress. The current goal is to create a simple application w
 1) Read Information from database 
 2) Insert Rows Into Database 
 3) Update Rows in Database
-
+4) Delete Rows in Database
   
 Technologies Utilized:
 
@@ -24,7 +24,6 @@ Technologies Utilized:
  - itemTitle - varchar(255)
  - itemUrl - text
  - itemDuration - int
-
 
 =====
 
