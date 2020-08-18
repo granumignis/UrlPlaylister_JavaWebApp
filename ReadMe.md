@@ -9,7 +9,7 @@ This is a work in progress. The current goal is to create a simple application w
 3) Update Rows in Database
 4) Delete Rows in Database
   
-While this basic concept surrounding this application is similar to the urlplaylister python application on my github page, this project does not have the full functionality of that application.
+While this basic concept surrounding this application is similar to the 'urlplaylister' Python application on my github page, this project does not currently have the full functionality of that application.
 
 Technologies Utilized:
 
